@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Xyclone Designs</Authors>
+    <Copyright>Copyright © $(Authors) $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
+    <Description>Generic classes &amp; extensions for Google.Android.Material</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageId>$(AssemblyName)</PackageId>
+    <PackageLicenseFile>license-apache-2.0.txt</PackageLicenseFile>
+    <PackageOutputPath>../</PackageOutputPath>
+    <PackageProjectUrl>https://xyclonedesigns.co.za/developers/nuget/$(AssemblyName)</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Added new methods</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageTags>google;android;material;extension;xyclone;designs</PackageTags>
+    <RepositoryUrl>https://github.com/xyclone-designs/packages.extensions/$(AssemblyName)</RepositoryUrl>
+    <Title>$(AssemblyName)</Title>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\values\attrs.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.12.0.2" />
+    <PackageReference Include="XycloneDesigns.Extensions.Android" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Update="license-apache-2.0.txt">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+</Project>

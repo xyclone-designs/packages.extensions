@@ -1,0 +1,1 @@
+A series of generic classes and extensions to speed up Xamarin.Android development

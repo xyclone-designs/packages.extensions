@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Description>Generic classes extensions for AndroidX</Description>
+    <Authors>Xyclone Designs</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.0</Version>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/xyclone-designs/packages.extensions/$(AssemblyName)</RepositoryUrl>
+    <PackageTags>android;androidx;extension;xyclone;designs</PackageTags>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageOutputPath>../</PackageOutputPath>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageId>xyclonedesigns.extensions.androidx</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XycloneDesigns.Extensions.Android" Version="1.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="icon.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Update="license-apache-2.0.txt">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="AndroidX\AppCompat\" />
+  </ItemGroup>
+  
+</Project>

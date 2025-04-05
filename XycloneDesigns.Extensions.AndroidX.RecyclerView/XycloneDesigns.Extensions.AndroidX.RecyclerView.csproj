@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Xyclone Designs</Authors>
+    <Copyright>Copyright © $(Authors) $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
+    <Description>Generic classes &amp; extensions for AndroidX.RecyclerView</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <IncludeSymbols>False</IncludeSymbols>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageId>$(AssemblyName)</PackageId>
+    <PackageLicenseFile>license-apache-2.0.txt</PackageLicenseFile>
+    <PackageOutputPath>../</PackageOutputPath>
+    <PackageProjectUrl>https://xyclonedesigns.co.za/developers/nuget/$(AssemblyName)</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Added new default classes. Updated others</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageTags>android;androidx;recycler;view;extension;xyclone;designs</PackageTags>
+    <RepositoryUrl>https://github.com/xyclone-designs/packages.extensions/$(AssemblyName)</RepositoryUrl>
+    <Title>$(AssemblyName)</Title>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.4.0" />
+    <PackageReference Include="XycloneDesigns.Extensions.Android" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="license-apache-2.0.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+</Project>

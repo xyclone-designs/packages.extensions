@@ -1,0 +1,8 @@
+<resources>
+
+  <declare-styleable name="TabLayoutView">
+    <attr name="tabViewSpacing" format="dimension" />
+    <attr name="tabViewStyle" format="reference" />
+  </declare-styleable>
+
+</resources>
