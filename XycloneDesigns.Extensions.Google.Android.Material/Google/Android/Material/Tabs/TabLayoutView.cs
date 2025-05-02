@@ -52,8 +52,6 @@ namespace Google.Android.Material.Tabs
 			if (tab.CustomView is not null)
 			{
 				tab.CustomView.Selected = tab.IsSelected;
-
-				if (tab.Position == 0) tab.CustomView.SetMarginStart(TabViewSpacing); tab.CustomView.SetMarginEnd(TabViewSpacing);
 			}
 		}
 		public void ConfigureTab(Tab tab, Action<TabView> viewaction)
