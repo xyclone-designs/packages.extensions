@@ -95,5 +95,14 @@ namespace System.Linq
 				.Select(selector)
 				.Sum();
 		}
+
+		public static IEnumerable<string> AppendFormat(this IEnumerable<string> enumerable, string format, params object?[] args)
+		{
+			return enumerable.Append(string.Format(format, args));
+		}
+		public static IEnumerable<string> PrependFormat(this IEnumerable<string> enumerable, string format, params object?[] args)
+		{
+			return enumerable.Prepend(string.Format(format, args));
+		}
 	}
 }
