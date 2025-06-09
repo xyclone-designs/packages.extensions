@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XycloneDesigns.Extensions.A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XycloneDesigns.Extensions.Google.Android.Material", "XycloneDesigns.Extensions.Google.Android.Material\XycloneDesigns.Extensions.Google.Android.Material.csproj", "{9B93E2DA-8A8E-4CEA-A458-1F65252BE353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XycloneDesigns.Extensions.AndroidX.AppCompat", "XycloneDesigns.Extensions.AndroidX.AppCompat\XycloneDesigns.Extensions.AndroidX.AppCompat.csproj", "{FC2451E7-A4ED-4F98-A1B7-99796CB16147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XycloneDesigns.Extensions.AndroidX.AppCompat", "XycloneDesigns.Extensions.AndroidX.AppCompat\XycloneDesigns.Extensions.AndroidX.AppCompat.csproj", "{FC2451E7-A4ED-4F98-A1B7-99796CB16147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XycloneDesigns.Extensions.SQLite", "XycloneDesigns.Extensions.SQLite\XycloneDesigns.Extensions.SQLite.csproj", "{73C310D3-C009-44A7-BFA0-25B45047132F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{FC2451E7-A4ED-4F98-A1B7-99796CB16147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC2451E7-A4ED-4F98-A1B7-99796CB16147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC2451E7-A4ED-4F98-A1B7-99796CB16147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C310D3-C009-44A7-BFA0-25B45047132F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C310D3-C009-44A7-BFA0-25B45047132F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C310D3-C009-44A7-BFA0-25B45047132F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C310D3-C009-44A7-BFA0-25B45047132F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
