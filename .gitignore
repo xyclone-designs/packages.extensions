@@ -22,10 +22,14 @@ XycloneDesigns.Extensions.AndroidX.RecyclerView/Properties/PublishProfiles
 XycloneDesigns.Extensions.CSharp/bin
 XycloneDesigns.Extensions.CSharp/obj
 XycloneDesigns.Extensions.CSharp/Properties/PublishProfiles
+XycloneDesigns.Extensions.GZip/bin
+XycloneDesigns.Extensions.GZip/obj
+XycloneDesigns.Extensions.GZip/Properties/PublishProfiles
 XycloneDesigns.Extensions.Google.Android.Material/bin
 XycloneDesigns.Extensions.Google.Android.Material/obj
 XycloneDesigns.Extensions.Google.Android.Material/Properties/PublishProfiles
 XycloneDesigns.Extensions.SQLite/bin
 XycloneDesigns.Extensions.SQLite/obj
 XycloneDesigns.Extensions.SQLite/Properties/PublishProfiles
+
 *.user
