@@ -19,17 +19,17 @@
     <PackageOutputPath>../</PackageOutputPath>
     <PackageProjectUrl>https://xyclonedesigns.co.za/developers/nuget/$(AssemblyName)</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Added new default classes. Updated others</PackageReleaseNotes>
+    <PackageReleaseNotes>Misc Updates</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageTags>android;androidx;recycler;view;extension;xyclone;designs</PackageTags>
     <RepositoryUrl>https://github.com/xyclone-designs/packages.extensions/$(AssemblyName)</RepositoryUrl>
     <Title>$(AssemblyName)</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.4.0" />
-    <PackageReference Include="XycloneDesigns.Extensions.Android" Version="1.0.0" />
+    <PackageReference Include="XycloneDesigns.Extensions.Android" Version="1.0.2" />
   </ItemGroup>
 
   <ItemGroup>
