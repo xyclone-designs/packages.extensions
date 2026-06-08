@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <TargetFramework>net8.0-android</TargetFramework>
+    <TargetFramework>net10.0-android</TargetFramework>
     <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
+	<IsTrimmable>true</IsTrimmable>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -19,16 +20,16 @@
     <PackageOutputPath>../</PackageOutputPath>
     <PackageProjectUrl>https://xyclonedesigns.co.za/developers/nuget/$(AssemblyName)</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Updated dependency 'Xamarin.AndroidX.ConstraintLayout' [2.2.0.2 -> 2.2.1]</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to android 10</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageTags>android;androidx;constraint;layout;extension;xyclone;designs</PackageTags>
     <RepositoryUrl>https://github.com/xyclone-designs/packages.extensions/$(AssemblyName)</RepositoryUrl>
     <Title>$(AssemblyName)</Title>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.1" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.1.5" />
   </ItemGroup>
   
   <ItemGroup>
