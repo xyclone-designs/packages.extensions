@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.1.5" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.2" />
   </ItemGroup>
   
   <ItemGroup>

@@ -6,7 +6,7 @@ namespace ICSharpCode.SharpZipLib.GZip
 	{
 		public static string GZipFile(this FileInfo fileinfo)
 		{
-			return fileinfo.GZipFile(Path.Combine(fileinfo.FullName.Split('\\')[0..^1]), fileinfo.FullName);
+			return fileinfo.GZipFile(Path.Combine(fileinfo.FullName.Split('\\')[0..^1]), fileinfo.Name);
 		}
 		public static string GZipFile(this FileInfo fileinfo, string? outputdirectory, string? outputfilename)
 		{
