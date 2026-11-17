@@ -11,11 +11,8 @@ namespace System.IO
 		}
 		public static string ZipFile(this FileInfo fileinfo, string? outputdirectory, string? outputfilename)
 		{
-			outputdirectory ??= Path.Combine(fileinfo.FullName.Split('\\')[0..^1]);
-			outputfilename ??= fileinfo.Name;
-
 			string name = fileinfo.FullName.Split("\\").Last();
-			string zipfilepath = string.Format("{0}.zip", Path.Combine(outputdirectory, outputfilename));
+			string zipfilepath = fileinfo.ZipFilePath(outputdirectory, outputfilename);
 
 			using FileStream filestream = File.OpenRead(fileinfo.FullName);
 			using FileStream filestreamzip = File.Create(zipfilepath);
@@ -29,5 +26,19 @@ namespace System.IO
 
 			return zipfilepath;
 		}
-	}
+
+        public static string ZipFilePath(this FileInfo fileinfo)
+        {
+            return fileinfo.ZipFilePath(Path.Combine(fileinfo.FullName.Split('\\')[0..^1]), fileinfo.FullName);
+        }
+        public static string ZipFilePath(this FileInfo fileinfo, string? outputdirectory, string? outputfilename)
+        {
+            outputdirectory ??= Path.Combine(fileinfo.FullName.Split('\\')[0..^1]);
+            outputfilename ??= fileinfo.Name;
+
+            string name = fileinfo.FullName.Split("\\").Last();
+            
+			return string.Format("{0}.zip", Path.Combine(outputdirectory, outputfilename));
+        }
+    }
 }
